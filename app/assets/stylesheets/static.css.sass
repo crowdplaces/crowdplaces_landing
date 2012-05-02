@@ -8,8 +8,8 @@ body[data-controller-class="StaticController"][data-action="Index"]
     h3
       font-size: 1.1em
     #description
-      font-size: 1.4em
-      line-height: 1.2em
+      font-size: 1.5em
+      line-height: 1.5em
     +grid(6)
     .send
       +grid-subcolumn(6, 3)
@@ -21,3 +21,5 @@ body[data-controller-class="StaticController"][data-action="Index"]
     +last
     margin-top: 1em
     min-height: 400px
+    @media handheld, only screen and (max-width: 767px)
+      min-height: 220px
