@@ -12,5 +12,6 @@ html
     = javascript_include_tag "application"
   body data-controller-class=controller.class.name data-controller-name=controller.controller_name.camelize data-action=controller.action_name.camelize
     header
-    #content= yield
-    footer
+    #content_container
+      #content= yield
+    footer Imagina lugares, financia ideas

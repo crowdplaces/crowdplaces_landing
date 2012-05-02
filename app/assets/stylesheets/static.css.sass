@@ -1,3 +1,23 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import columnal/grid
+body[data-controller-class="StaticController"][data-action="Index"]
+  #about
+    h1
+      margin-bottom: 0
+    h2
+      margin-top: 0
+    h3
+      font-size: 1.1em
+    #description
+      font-size: 1.4em
+      line-height: 1.2em
+    +grid(6)
+    .send
+      +grid-subcolumn(6, 3)
+    .follow
+      +grid-subcolumn(6, 3)
+      +last
+  #video
+    +grid(6)
+    +last
+    margin-top: 1em
+    min-height: 400px
