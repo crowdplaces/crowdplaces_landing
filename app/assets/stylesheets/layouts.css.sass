@@ -1,8 +1,28 @@
 @import columnal/grid
++text
 body
+  +grid-container
   header
     +grid-row
   #content
     +grid-row
+    #about
+      h1
+        margin-bottom: 0
+      h2
+        margin-top: 0
+      h3
+        font-size: 1.1em
+      +grid(6)
+      .send
+        +grid-subcolumn(6, 3)
+      .follow
+        +grid-subcolumn(6, 3)
+        +last
+    #video
+      +grid(6)
+      +last
+      margin-top: 1em
+      min-height: 400px
   footer
     +grid-row
