@@ -1,11 +1,11 @@
 doctype html
 html
   head
-    title Imagina lugares, financia ideas · Crowdplaces
+    title= t :title
     = stylesheet_link_tag "application"
     meta[charset="utf-8"]
-    meta[name="description" content="Crowdplaces es la primera plataforma internacional de financiamiento colaborativo enfocada en proyectos que generen impacto social mediante la producción de espacios urbanos sostenibles. Crowdplaces gatilla la imaginación de personas locales para mejorar espacios urbanos."]
-    meta[name="keywords" content="Crowdplaces plataforma internacional financiamiento colaborativo crowdfunding proyectos impacto social espacios urbanos sostenibles"]
+    meta[name="description" content=t(:description)]
+    meta[name="keywords" content=t(:keywords)]
     meta[name="author" content="Crowdplaces"]
     = yield(:meta_tags)
     = csrf_meta_tag
@@ -14,4 +14,4 @@ html
     header
     #content_container
       #content= yield
-    footer Imagina lugares, financia ideas
+    footer= t :tagline
