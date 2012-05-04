@@ -1,5 +1,8 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  title: "Imagine places, finance ideas · Crowdplaces"
+  keywords: "Crowdplaces platform international finance collaborative crowdfunding projects social impact sustainable urban spaces"
+  tagline: "Imagine places, finance ideas."
+  description: "Crowdplaces is the first international crowdfunding tool to produce sustainable urban spaces Crowdplaces triggers local imagination to inspire and empower people to make their neighborhood better."
+  send_project: "Submit your project"
+  follow_us: "Follow us"
+  project_form: "http://crowdplaces.wufoo.com/forms/send-us-your-project/"
