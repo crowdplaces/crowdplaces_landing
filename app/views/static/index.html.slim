@@ -1,9 +1,9 @@
 #about
   h1= image_tag "logo.png"
-  p#description Crowdplaces es la primera plataforma internacional de financiamiento colaborativo para producir espacios urbanos sostenibles. Crowdplaces gatilla la imaginación para inspirar y empoderar a personas a hacer de sus barrios un mejor lugar.
+  p#description= t :description
   #call_to_action
     .send
-      a.button Mándanos tu proyecto
+      a.button href=t(:project_form) = t(:send_project)
     .follow
-      a.button Conéctate con nosotros
+      a.button= t :follow_us
 iframe#video src="http://player.vimeo.com/video/35804679?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
