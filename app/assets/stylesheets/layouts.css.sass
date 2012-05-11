@@ -15,7 +15,7 @@ body
         a
           display: block
           position: absolute
-          right: -1.3em
+          right: 0.4em
           top: -3.6em
           +border-bottom-left-radius(8px)
           +border-bottom-right-radius(8px)
@@ -30,19 +30,20 @@ body
   #content_container
     +grid-container
     +clearfix
-    background: $ice
+    width: 940px
     margin-top: 2em
     border: 5px solid $white
-    padding: 1.5em 1em
     +border-radius(0.2em)
-    +box-shadow($gray 0px 0px 20px inset)
     #content
       +grid(16)
+      +alpha
+      background: $ice
+      padding: 2em 0
+      +box-shadow($gray 0px 0px 20px inset)
   footer
-    background: url(image-path("footer.png")) no-repeat top center
+    //background: url(image-path("footer.png")) no-repeat top center
     margin-top: 2em
     padding-top: 2em
-    padding-bottom: 2.6em
     font-size: 1.5em
     +clearfix
     .content
