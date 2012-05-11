@@ -24,10 +24,22 @@ body[data-controller-class="StaticController"][data-action="Index"]
         font-size: 1.3em
         line-height: 1.2em
       .send
-        margin-top: 1em
-        +grid-subcolumn(6, 6)
+        +grid(12)
         +last
       .follow
-        margin-top: 2em
-        +grid-subcolumn(6, 6)
+        margin-top: 1.6em
+        +grid(12)
         +last
+        .social
+          display: none
+          +grid(12)
+          +last
+          background: $yellow
+          +border-bottom-left-radius(8px)
+          +border-bottom-right-radius(8px)
+          .twitter
+            float: left
+            padding: 1em
+          .facebook
+            float: right
+            padding: 1em

@@ -6,5 +6,15 @@ var App = window.App = {
 
     finish: function(){
     },
+  },
+  Static: {
+    Index: function(){
+      $(document).ready(function(){
+        $('.follow .button').click(function(event){
+          event.preventDefault()
+          $('.social').slideDown(240)
+        })
+      })
+    }
   }
 };

@@ -5,7 +5,7 @@ jQuery(function () {
   controllerClass = body.data( "controller-class" );
   controllerName = body.data( "controller-name" );
   action = body.data( "action" );
-
+  
   function exec(controllerClass, controllerName, action) {
     var ns, railsNS;
 
