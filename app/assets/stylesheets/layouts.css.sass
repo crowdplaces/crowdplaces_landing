@@ -1,5 +1,6 @@
-@import columnal/grid
 @import compass/css3
+@import compass/utilities
+@import columnal/grid
 @import colors
 
 body
@@ -7,6 +8,26 @@ body
     +grid-container
   #content_container
     +grid-container
+    #locale
+      +grid-row
+      overflow: visible
+      .menu
+        position: relative
+        a
+          display: block
+          position: absolute
+          right: 0
+          top: -3.6em
+          +border-bottom-left-radius(8px)
+          +border-bottom-right-radius(8px)
+          background: $dark_brown
+          padding: 0 0.4em
+          +transition(all, 0.3s)
+          &:hover
+            top: -2em
+          img
+            width: 48px
+            margin-bottom: 0
     #content
       +grid-row
       width: 97.5%

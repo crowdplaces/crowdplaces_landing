@@ -13,6 +13,10 @@ html
   body data-controller-class=controller.class.name data-controller-name=controller.controller_name.camelize data-action=controller.action_name.camelize
     header
     #content_container
+      #locale
+        .menu
+          a href="/?locale=#{(I18n.locale == :en ? 'es' : 'en')}"
+            = image_tag "#{(I18n.locale == :en ? 'es' : 'en')}.png"
       #content= yield
     footer
       .content
