@@ -8,12 +8,12 @@ body[data-controller-class="StaticController"][data-action="Index"]
     +clearfix
     #video
       +grid(6)
+      +last
       min-height: 374px
       @media handheld, only screen and (max-width: 767px)
         min-height: 220px
     #about
       +grid(6)
-      +last
       h1
         margin-bottom: 0
       h2
@@ -21,6 +21,7 @@ body[data-controller-class="StaticController"][data-action="Index"]
       h3
         font-size: 1.1em
       #description
+        color: $dark_gray
         font-size: 1.3em
         line-height: 1.2em
       .send
