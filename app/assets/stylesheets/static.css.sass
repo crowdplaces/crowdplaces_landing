@@ -1,25 +1,29 @@
 @import columnal/grid
+@import colors
+
 body[data-controller-class="StaticController"][data-action="Index"]
-  #about
-    h1
-      margin-bottom: 0
-    h2
-      margin-top: 0
-    h3
-      font-size: 1.1em
-    #description
-      font-size: 1.5em
-      line-height: 1.5em
-    +grid(6)
-    .send
-      +grid-subcolumn(6, 3)
-    .follow
-      +grid-subcolumn(6, 3)
+  #content
+    #video
+      +grid(6)
+      min-height: 410px
+      @media handheld, only screen and (max-width: 767px)
+        min-height: 220px
+    #about
+      +grid(6)
       +last
-  #video
-    +grid(6)
-    +last
-    margin-top: 1em
-    min-height: 410px
-    @media handheld, only screen and (max-width: 767px)
-      min-height: 220px
+      h1
+        margin-bottom: 0
+      h2
+        margin-top: 0
+      h3
+        font-size: 1.1em
+      #description
+        font-size: 1.5em
+        line-height: 1.5em
+      .send
+        +grid-subcolumn(6, 6)
+        +last
+      .follow
+        margin-top: 1em
+        +grid-subcolumn(6, 6)
+        +last

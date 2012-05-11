@@ -14,4 +14,9 @@ html
     header
     #content_container
       #content= yield
-    footer= t :tagline
+    footer
+      .content
+        .logo= image_tag "logo.png"
+        .tagline
+          .first= t :tagline_first
+          .second= t :tagline_second
