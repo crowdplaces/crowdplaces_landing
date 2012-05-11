@@ -21,11 +21,11 @@ html
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     header
-    #content_container
       #locale
         .menu
           a href="/?locale=#{(I18n.locale == :en ? 'es' : 'en')}"
             = image_tag "#{(I18n.locale == :en ? 'es' : 'en')}.png"
+    #content_container
       #content= yield
     footer
       .content

@@ -1,47 +1,41 @@
-@import columnal/grid
+@import compass/css3
 @import compass/utilities
 @import colors
 
+@import 960/grid
+$ninesixty-columns: 16
+
 body[data-controller-class="StaticController"][data-action="Index"]
-  .box
-    padding: 2em
-    +clearfix
-    #video
-      +grid(6)
-      +last
-      min-height: 374px
-      @media handheld, only screen and (max-width: 767px)
-        min-height: 220px
-    #about
-      +grid(6)
-      h1
-        margin-bottom: 0
-      h2
-        margin-top: 0
-      h3
-        font-size: 1.1em
-      #description
-        color: $dark_gray
-        font-size: 1.3em
-        line-height: 1.2em
-      .send
-        +grid(12)
-        +last
-        margin-top: 0.8em
-      .follow
-        margin-top: 1.6em
-        +grid(12)
-        +last
-        .social
-          display: none
-          +grid(12)
-          +last
-          background: $yellow
-          +border-bottom-left-radius(8px)
-          +border-bottom-right-radius(8px)
-          .twitter
-            float: left
-            padding: 1em
-          .facebook
-            float: right
-            padding: 1em
+  #about
+    +grid(6)
+    +alpha
+    h1
+      margin-bottom: 0
+    h2
+      margin-top: 0
+    h3
+      font-size: 1.1em
+    #description
+      color: $dark_gray
+      font-size: 1.2em
+      line-height: 1.4em
+    .send
+      margin-top: 1.6em
+    .follow
+      margin-top: 2em
+      .social
+        +clearfix
+        display: none
+        background: $yellow
+        +border-bottom-left-radius(8px)
+        +border-bottom-right-radius(8px)
+        .twitter
+          float: left
+          padding: 1em
+        .facebook
+          float: right
+          padding: 1em
+  #video
+    +grid(10)
+    +omega
+    min-height: 424px

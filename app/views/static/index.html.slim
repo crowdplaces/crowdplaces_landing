@@ -1,16 +1,15 @@
-.box
-  #about
-    #description= t :description_html
-    #call_to_action
-      .send
-        a.button href=t(:project_form) target="_blank"= t(:send_project)
-      .follow
-        a.button href="#"= t :follow_us
-        .social
-          .twitter
-            a href="https://twitter.com/crowdplaces" class="twitter-follow-button" data-show-count="true" data-lang=I18n.locale data-width="260px" Follow @crowdplaces
-            javascript:
-              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-          .facebook
-            .fb-like data-href="http://www.facebook.com/crowdplaces" data-layout="button_count" data-send="false" data-width="80" data-show-faces="false" data-font="arial"
-  iframe#video src="http://player.vimeo.com/video/35804679?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+#about
+  #description= t :description_html
+  #call_to_action
+    .send
+      a.button href=t(:project_form) target="_blank"= t(:send_project)
+    .follow
+      a.button href="#"= t :follow_us
+      .social
+        .twitter
+          a href="https://twitter.com/crowdplaces" class="twitter-follow-button" data-show-count="true" data-lang=I18n.locale data-width="160px" Follow @crowdplaces
+          javascript:
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        .facebook
+          .fb-like data-href="http://www.facebook.com/crowdplaces" data-layout="button_count" data-send="false" data-width="80" data-show-faces="false" data-font="arial"
+iframe#video src="http://player.vimeo.com/video/35804679?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen

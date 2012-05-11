@@ -1,22 +1,21 @@
 @import compass/css3
 @import compass/utilities
-@import columnal/grid
 @import colors
+
+@import 960/grid
+$ninesixty-columns: 16
 
 body
   header
     +grid-container
-  #content_container
-    +grid-container
     #locale
-      +grid-row
       overflow: visible
       .menu
         position: relative
         a
           display: block
           position: absolute
-          right: 0
+          right: -1.3em
           top: -3.6em
           +border-bottom-left-radius(8px)
           +border-bottom-right-radius(8px)
@@ -28,41 +27,32 @@ body
           img
             width: 48px
             margin-bottom: 0
-    #content
-      +grid-row
-      width: 97.5%
-      max-width: $columnal-grid-width - 10px
-      background: $ice
-      margin-top: 2em
-      border: 5px solid $white
-      +border-radius(0.2em)
-      +box-shadow($gray 0px 0px 20px inset)
-      @media handheld, only screen and (max-width: 767px)
-        width: 97.5%
-        margin-top: 0em
-  footer
-    background: url(image-path("footer.png")) no-repeat center
+  #content_container
     +grid-container
-    margin-top: 3em
+    +clearfix
+    background: $ice
+    margin-top: 2em
+    border: 5px solid $white
+    padding: 1.5em 1em
+    +border-radius(0.2em)
+    +box-shadow($gray 0px 0px 20px inset)
+    #content
+      +grid(16)
+  footer
+    background: url(image-path("footer.png")) no-repeat top center
+    margin-top: 2em
     padding-top: 2em
     padding-bottom: 2.6em
     font-size: 1.5em
-    @media handheld, only screen and (max-width: 767px)
-      margin-top: 0em
-      padding-bottom: 0em
+    +clearfix
     .content
-      +grid-row
-      width: 97.5%
-      max-width: $columnal-grid-width - 10px
-      @media handheld, only screen and (max-width: 767px)
-        width: 97.5%
+      +grid-container
       .logo
         +grid(4)
       .tagline
+        +grid(5)
+        +grid-prefix(7)
         font-family: "gotham-bold"
-        +grid(4)
-        +grid-prefix(4)
-        +last
         text-transform: uppercase
         .first
           color: $pink
