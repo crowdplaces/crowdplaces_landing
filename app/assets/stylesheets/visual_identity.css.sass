@@ -1,8 +1,13 @@
-@import columnal/grid
-@import compass/css3
 @import compass/reset
+@import compass/css3
 @import colors
-+text
+
+body
+  background: $dark_brown url(image-path("bg.jpg")) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+p
+  padding-bottom: 1em
 
 .button
   display: block
@@ -11,6 +16,7 @@
   text-decoration: none
   text-align: center
   text-transform: uppercase
+  font-family: "gotham-bold"
   font-size: 1.5em
   line-height: 1.5em
   border: 1px solid $red

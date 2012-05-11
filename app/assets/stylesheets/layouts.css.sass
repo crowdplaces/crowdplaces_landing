@@ -3,7 +3,6 @@
 @import colors
 
 body
-  background: $dark_brown url(image-path("bg.jpg")) no-repeat top center
   header
     +grid-container
   #content_container
@@ -27,6 +26,7 @@ body
       .logo
         +grid(9)
       .tagline
+        font-family: "gotham-bold"
         +grid(3)
         +last
         text-transform: uppercase
