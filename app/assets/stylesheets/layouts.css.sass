@@ -9,25 +9,38 @@ body
     +grid-container
     #content
       +grid-row
+      width: 97.5%
+      max-width: $columnal-grid-width - 10px
       background: $ice
-      margin-top: 5em
-      padding: 1em
-      border: 0.4em solid $white
+      margin-top: 2em
+      border: 5px solid $white
       +border-radius(0.2em)
       +box-shadow($gray 0px 0px 20px inset)
+      @media handheld, only screen and (max-width: 767px)
+        width: 97.5%
+        margin-top: 0em
   footer
+    background: url(image-path("footer.png")) repeat-x
     +grid-container
-    margin-top: 5em
+    margin-top: 3em
     padding-top: 2em
-    padding-bottom: 7em
+    padding-bottom: 2.6em
     font-size: 1.5em
+    @media handheld, only screen and (max-width: 767px)
+      margin-top: 0em
+      padding-bottom: 0em
     .content
       +grid-row
+      width: 97.5%
+      max-width: $columnal-grid-width - 10px
+      @media handheld, only screen and (max-width: 767px)
+        width: 97.5%
       .logo
-        +grid(9)
+        +grid(4)
       .tagline
         font-family: "gotham-bold"
-        +grid(3)
+        +grid(4)
+        +grid-prefix(4)
         +last
         text-transform: uppercase
         .first
