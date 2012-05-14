@@ -7,9 +7,13 @@
       a.button href="#"= t :follow_us
       .social
         .twitter
-          a href="https://twitter.com/crowdplaces" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang=I18n.locale data-width="125px" Follow @crowdplaces
+          a href="https://twitter.com/crowdplaces" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" data-lang=I18n.locale data-width="60px" Follow @crowdplaces
           javascript:
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        .blog
+          a href="http://blog.crowdplaces.org" target="_blank"
+            = image_tag "blog.png"
+            |Blog
         .facebook
-          .fb-like data-href="http://www.facebook.com/crowdplaces" data-layout="button_count" data-send="false" data-width="80" data-show-faces="false" data-font="arial"
+          .fb-like data-href="http://www.facebook.com/crowdplaces" data-layout="button_count" data-send="false" data-width="100" data-show-faces="false" data-font="arial"
 iframe#video src="http://player.vimeo.com/video/35804679?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen

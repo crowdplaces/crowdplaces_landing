@@ -20,14 +20,14 @@ body[data-controller-class="StaticController"][data-action="Index"]
       font-size: 1.1em
     #description
       color: $dark_gray
-      font-size: 1.1em
+      font-size: 1.15em
       line-height: 1.2em
     #call_to_action
       +grid(5)
       +alpha
       +omega
       .send
-        margin-top: 1em
+        margin-top: 0.4em
       .follow
         margin-top: 1.4em
         .social
@@ -38,10 +38,33 @@ body[data-controller-class="StaticController"][data-action="Index"]
           +border-bottom-right-radius(8px)
           .twitter
             float: left
-            padding: 1em
+            padding: 1em 1em 1em 1em
+          .blog
+            float: left
+            padding: 1em 0.2em
+            a
+              font-family: Arial
+              font-weight: bold
+              font-size: 0.7em
+              text-decoration: none
+              color: $light_black
+              line-height: 1.7em
+              padding: 0 0.4em 0 0.2em
+              display: block
+              background: $ice
+              border: 1px solid $gray
+              +border-radius(3px)
+              +background-image(linear-gradient(top, $ice, darken($ice, 5%)))
+              img
+                width: 14px
+                vertical-align: middle
+                margin-top: -2px
+                margin-right: 4px
+              &:hover
+                +background-image(linear-gradient(bottom, $ice, darken($ice, 5%)))
           .facebook
             float: right
-            padding: 1em
+            padding: 1em 1em 1em 0
   #video
     +grid(9)
     min-height: 380px
